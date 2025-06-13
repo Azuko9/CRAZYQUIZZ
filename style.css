@@ -49,7 +49,20 @@ section {
     border-radius: 25px;
     flex: 1;
     margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
 
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 8px #ffffffbb;
+    border: #7c7c7c solid 2px;
+
+}
+
+section:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 4px 8px #000000bb;
+    border: #000000 solid 2px;
 }
 
 @media screen and (max-width: 1064px) {
