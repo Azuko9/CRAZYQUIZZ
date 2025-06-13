@@ -58,6 +58,10 @@ section {
         height: 160px;
     }
 
+    img {
+        max-width: 350px;
+    }
+
 }
 
 @media screen and (max-width: 880px) {
