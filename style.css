@@ -26,20 +26,32 @@ header {
 main {
     display: flex;
     flex-direction: row;
-
     text-align: center;
 }
 
 h1 {
-
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 img {
-    max-width: 500px;
+    max-width: 600px;
+    animation: danse 1s infinite ease-in-out alternate;
+    transform-origin: center;
 }
 
+@keyframes danse {
+    0% {
+        transform: rotate(-5deg);
+    }
 
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
 
 section {
 
@@ -56,6 +68,7 @@ section:hover {
     transform: scale(1.05);
     box-shadow: 2px 4px 8px #ffffffbb;
     border: #7c7c7c solid 2px;
+    transform: rotate(-5deg);
 
 }
 
@@ -63,6 +76,7 @@ section:active {
     transform: scale(0.95);
     box-shadow: inset 2px 4px 8px #000000bb;
     border: #000000 solid 2px;
+    transform: rotate(-5deg);
 }
 
 @media screen and (max-width: 1064px) {
@@ -95,7 +109,7 @@ section:active {
     section {
         width: 120px;
         height: 120px;
-        margin: 5px;
+        margin: 10px;
     }
 }
 
