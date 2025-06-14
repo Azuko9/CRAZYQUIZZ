@@ -115,11 +115,22 @@ section:active {
     body {
         justify-content: flex-start;
     }
+
+    #tiktok {
+        transform: rotate(5deg);
+    }
+
+    #instagram {
+        transform: rotate(-5deg);
+    }
+
+    #facebook {
+        transform: rotate(5deg);
+    }
+
+
+
 }
-
-
-
-
 
 #tiktok {
     background-image: url(./img/tiktok.webp);
