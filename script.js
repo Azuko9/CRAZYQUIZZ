@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const pauseIcon = document.getElementById("pause-icon");
     const barLeft = document.getElementById("bar-left-fill");
     const barRight = document.getElementById("bar-right-fill");
+    const paillette = document.getElementById("paillette");
+    const body = document.body;
 
     toggleBtn.addEventListener("click", () => {
         if (audio.paused) {
@@ -12,11 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
             toggleBtn.classList.add("playing");
             playIcon.style.display = "none";
             pauseIcon.style.display = "block";
+            body.classList.add("paillette");
         } else {
             audio.pause();
             toggleBtn.classList.remove("playing");
             playIcon.style.display = "block";
             pauseIcon.style.display = "none";
+            body.classList.remove("paillette");
         }
     });
 
@@ -39,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         barRight.setAttribute("y", 52);
         barLeft.setAttribute("height", 0);
         barRight.setAttribute("height", 0);
+        body.classList.remove("paillette");
     });
 
     // Safari-compatible gradient animation
