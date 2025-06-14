@@ -57,7 +57,7 @@ section {
 
     width: 250px;
     height: 250px;
-    border: #000000 solid 2px;
+    border: #000000 solid 4px;
     border-radius: 25px;
     flex: 1;
     margin: 20px;
@@ -91,7 +91,7 @@ section:active {
 
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 780px) {
     main {
         flex-direction: column;
     }
@@ -114,6 +114,8 @@ section:active {
 
     body {
         justify-content: flex-start;
+        background-image: url(./img/paillette.gif);
+        background-size: cover;
     }
 
     #tiktok {
